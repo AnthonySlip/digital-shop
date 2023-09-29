@@ -1,0 +1,87 @@
+@import '../../assets/data';
+
+
+.footer {
+  background-color: $color3;
+  color: white;
+  font-weight: $fontWeight800;
+}
+
+.footer__container {
+}
+
+.footer__body {
+  padding: 16px 0;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 2rem;
+  transition: all 1s ease;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__contact{
+  padding: 6px 3px;
+  width: 72px;
+  background-color: white;
+  border-radius: 6px;
+}
+.footer__contact > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.footer__contact-svg {
+  width: 26px;
+  height: 26px;
+  transition: all .5s ease;
+}
+
+.footer__contact-name {
+  font-size: 1rem;
+  color: $color3;
+}
+
+.footer__about {
+  font-size: 3rem;
+  color: white;
+  transition: all 1s ease;
+}
+
+
+.footer__contact:hover .footer__contact-svg{
+  transform: rotate(360deg);
+}
+
+.footer__title:hover {
+  color: $color2;
+}
+.footer__about:hover {
+  color: $color2;
+}
+
+@media (max-width: 785px) {
+  .footer__body{
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: column;
+  }
+  .footer__contacts{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer__title{
+    text-align: center;
+  }
+}

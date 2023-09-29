@@ -1,0 +1,43 @@
+@import '../../assets/data';
+
+.trash{
+  padding: 3px 6px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px $color3;
+}
+.svg{
+  height: 100%;
+}
+.text{
+  font-weight: $fontWeight600;
+  color: $color3;
+}
+
+$color-btn-trash: $color2;
+$border-radius-btn-trash: 6px;
+.trash{
+  position: relative;
+  z-index: 0;
+}
+.trash::before{
+  position: absolute;
+  content: "";
+  background-color: $color-btn-trash;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .2s ease;
+  border-radius: $border-radius-btn-trash;
+  z-index: -1;
+}
+.trash:active::before{
+  width: 100%;
+}

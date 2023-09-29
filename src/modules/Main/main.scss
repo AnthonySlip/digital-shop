@@ -1,0 +1,82 @@
+@import '../../assets/data';
+
+.home {
+  margin: 3vh auto;
+  width: 100%;
+  color: $color3;
+}
+.home__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home__title {
+  margin: 0 2vw;
+  font-size: 2rem;
+  font-weight: $fontWeight800;
+  text-align: justify;
+  word-break: break-word;
+  line-height: 125%;
+}
+
+.home__advantages {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home__advantage {
+  max-width: 648px;
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.home__advantage-svg {
+  width: 160px;
+}
+
+.home__advantage-text {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: $fontWeight600;
+}
+
+.home__article {
+  margin: 0 3vw;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: $fontWeight600;
+  color: $color2;
+  word-break: break-word;
+  line-height: 125%;
+}
+
+@media (max-width: 706px) {
+  .home__title{
+    font-size: 1.5rem;
+  }
+  .home__advantage{
+    width: 90%;
+  }
+  .home__article{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .home__advantage-svg{
+    display: none;
+  }
+  .home__advantage{
+    width: 100%;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../assets/data';
+
+.main{
+  width: 100%;
+  height: fit-content;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px $color3;
+}
+.body{
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.img{
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease;
+}
+.name{
+  color: $color3;
+  font-weight: $fontWeight600;
+}
+.price{
+  font-size: 1.2rem;
+  padding: 0 6px;
+  width: fit-content;
+  font-weight: $fontWeight800;
+  color: whitesmoke;
+  background-color: $color2;
+  border-radius: 6px;
+  transition: all .3s ease;
+}
+
+.body:hover >.img {
+  transform: scale(1.1);
+}
+.price:hover {
+  background-color: #c70664;
+}

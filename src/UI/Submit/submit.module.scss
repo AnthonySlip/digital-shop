@@ -1,0 +1,15 @@
+@import '../../assets/data';
+
+.button{
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 16px;
+  font-size: 1.5rem;
+  font-weight: $fontWeight800;
+  background-color: $color2;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px $color3;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px $color3;
+}

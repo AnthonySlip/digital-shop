@@ -1,0 +1,33 @@
+@import '../../assets/data';
+
+.phone{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.logo{
+  width: 24px;
+  height: 24px;
+  transition: all .3s ease;
+}
+.text{
+  font-size: 1rem;
+  color: whitesmoke;
+  font-family: $mainTextFont;
+  font-weight: $fontWeight800;
+  transition: all .6s ease;
+}
+
+.phone:hover > .text {
+  color: $color2;
+}
+
+.phone:hover > .logo {
+  transform: scale(1.2);
+}
+
+@media (max-width: 725px) {
+  .text{
+    display: none;
+  }
+}

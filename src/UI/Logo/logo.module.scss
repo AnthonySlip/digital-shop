@@ -1,0 +1,54 @@
+@import '../../assets/data';
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.logo{
+  font-family: 'Courgette', cursive;
+  width: fit-content;
+  height: fit-content;
+  background-color: $color3;
+  border-radius: 16px 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 2rem;
+  padding: 8px 12px;
+}
+.body span {
+  line-height: 100%;
+  transition: all 1s ease;
+}
+.body span:first-child {
+  align-self: flex-start;
+  color: $color1;
+}
+.body span:last-child {
+  align-self: flex-end;
+  color: $color2;
+}
+
+.body:hover > span:first-child {
+  color: $color2;
+}
+.body:hover > span:last-child {
+  color: $color1;
+}
+
+@media (max-width: 725px) {
+  .body{
+    flex-direction: row;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 560px) {
+  .body{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 390px) {
+  .body{
+    font-size: 1.3rem;
+  }
+}

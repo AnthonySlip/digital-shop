@@ -1,0 +1,35 @@
+@import '../../assets/data';
+
+.admin {
+  margin: 0 auto;
+}
+
+.admin__body {
+  padding: 26px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.admin__form {
+  padding: 26px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: $color1;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px $color3;
+}
+
+.admin_input {
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: $color1;
+  border-bottom: solid 2px $color3;
+}
+
+.admin_input:not(:nth-child(5)) {
+
+}

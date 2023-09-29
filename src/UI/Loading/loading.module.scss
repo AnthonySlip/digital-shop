@@ -1,0 +1,43 @@
+@import '../../assets/data';
+
+.loading{
+  margin: 3vh auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 2rem;
+  text-align: center;
+  color: $color3;
+  font-size: 2rem;
+  font-weight: $fontWeight600;
+}
+
+
+.gears{
+  height: 120px;
+  display: flex;
+}
+
+.gear {
+  margin: 0 -6px;
+  animation-name: gears;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.gear1 {
+  height: 100%;
+}
+.gear2 {
+  height: 50%;
+}
+
+@keyframes gears {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}

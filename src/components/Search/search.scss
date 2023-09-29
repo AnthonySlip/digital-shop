@@ -1,0 +1,55 @@
+@import '../../assets/data';
+
+.search {
+  height: fit-content;
+  width: 50%;
+  display: flex;
+  padding: 2px;
+  background-color: $color2;
+  border-radius: 6px;
+}
+
+.search__input {
+  width: 100%;
+  height: fit-content;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-family: $mainTextFont;
+}
+
+.search__submit {
+  padding: 1px;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  line-height: 100%;
+  background-color: $color2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.search__submit-logo {
+  width: 36px;
+  height: auto;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+
+.search__submit:active > .search__submit-logo{
+  transform: scale(0.9);
+}
+
+@media (max-width: 725px) {
+  .search{
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .search__input{
+    font-size: 1.2rem;
+  }
+  .search__submit-logo {
+    width: 28px;
+  }
+}

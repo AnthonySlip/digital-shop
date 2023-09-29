@@ -1,0 +1,31 @@
+@import '../../assets/data';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.header__top {
+  background-color: $color3;
+}
+.header__bottom {
+}
+
+
+.header-top__container {
+}
+.header-bottom__container {
+}
+
+.header-top__body,
+.header-bottom__body {
+  padding: 6px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
