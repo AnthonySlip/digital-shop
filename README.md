@@ -1,7 +1,7 @@
 # DigitalShop - https://anthonyslip.github.io/digital-shop/
  
 DigitalShop - это псевдо интернет-магазин. Я написал его в качестве моего портфолио!
-Здесь реализован небольшой бэкенд (подробнее: https://github.com/AnthonySlip/aichat-server),
+Здесь реализован небольшой бэкенд (подробнее: https://github.com/AnthonySlip/digital-shop_server),
 здесь я впервые использовал типизацию (TypeScript) - это было непросто, но в последующем
 это помогло мне отловить кучу ошибок с бэка при разработке однотипных задач!
 
